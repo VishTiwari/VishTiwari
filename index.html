@@ -1,95 +1,436 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Vishrut Tiwari</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
-			<!-- Header -->
-				<section id="header">
-					<div class="container">
-							<h1 id="logo"><a href="index.html">Vish(rut) Tiwari</a></h1>
-							<h2 id="logo"><a href="index.html">Porfolio</a></h2>
-							<img src="images/Vish.jpg" width="325" height="400" alt="" /></a>
-										</div>
-				</section>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
 
-			<!-- Features -->
-				<section id="features">
-					<div class="container">
-						<header>
-							<h2> Presonal Projects </h2>
-						</header>
-						<div class="row aln-center">
-							<div class="col-4 col-6-medium col-12-small">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="Vishrut Tiwari's portfolio website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#3798db">
+    <title>My Portfolio</title>
+    <link rel="icon">
+    <link rel="stylesheet" href="build/css/common.css">
+    <link href="build/css/style-light.css" rel="stylesheet">
+</head>
 
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/Koterpreter.png" alt="" /></a>
-										<header>
-											<h3>Koterpreter</h3>
-										</header>
-										<p> Scheme interpreter programmed in Kotlin. View source code on
-										<a href="https://github.com/VishTiwari/Koterpreter">Github</a> or 
-									     <a href="https://repl.it/join/xpnldmel-vishtiwari">repl.it</a>  </p>
-									</section>
+<body>
+    <!-- Toggle Switch -->
+    <div class="toggle" >
+        <span>☀️</span>
+        <input type="checkbox" id="toggle-switch" role="switch" aria-checked="true" tabindex="0"/>
+        <label for="toggle-switch"><span class="screen-reader-text">Toggle Color Scheme</span></label>
+        <span>🌙</span>
+    </div>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="container position-relative">
+        <!-- End #mobile-menu-toggle -->
+        <header>
+            <div id="mobile-menu-close" class="align-items-center justify-content-end">
+                <span class="pr-2">Close</span> <i class="fas fa-times" aria-hidden="true"></i>
+            </div>
+            <ul id="menu" class="shadow">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <!-- End header -->
 
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
+    <div id="lead">
+        <div id="lead-content">
+            <h1 class="animate-pop-in">Vishrut Tiwari</h1>
+            <h2 class="animate-pop-in">Developer</h2>
+            <p class="resume1 animate-pop-in"><a href="Resume/Resume - Vishrut Tiwari.pdf"
+                    class="btn-rounded-white">Download Resume (PDF)</a></p>
+        </div>
+        <!-- End #lead-content -->
 
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/BeerPong.png" alt="" /></a>
-										<header>
-											<h3>Beer Pong in Agumented Reality</h3>
-										</header>
-										<p>Fun beer pong game made in Javascript and works on web browsers. Check it out: 
-											<a href="https://github.com/VishTiwari/AR_BeerPong">Github</a>
-										</p>
-									</section>
+        <div id="lead-overlay"></div>
 
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
+        <div id="lead-down">
+            <div class="lead-down-circle">
+                <span role="button" tabindex="0" title="Scroll down">
+                    <i class="fas fa-chevron-down" data-fa-transform="grow-2" aria-hidden="true"></i>
+                </span>
+            </div>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
 
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/JEV.png" alt="" /></a>
-										<header>
-											<h3>JEV</h3>
-										</header>
-										<p> Text editor made with C that works on the termianl. The image is an example of opening 
-											JEV's source code in JEV! Pretty meta right? 
-											Check out more on: <a href="https://github.com/VishTiwari/JEV">Github</a>   </p>
-									</section>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 align-items-center d-flex flex-column">
+                    <img src="assets/images/avatar.png" width="55%" height="55%" alt="My avatar" class="img-circle img-thumbnail rounded-circle">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <br></br>
+                    <p style = "line-height: 200%">
+                        Hey, thanks for checking out my web portfolio! My name is Vishrut Tiwari and I am a 
+                        Junior CS major at Columbia University in the City of New York. Feel free to check out my 
+                        projects and experience below. My goal is to have a positive social inpact through
+                        developing technologies and innovative products that improve others' lives. 
+                         Feel free to check out my: <a href="https://github.com/VishTiwari"> Github </a> 
+                         and <a href="https://www.linkedin.com/in/vishrut-tiwari/"> Linkedin </a>!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
 
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><a href="VishrutTiwari.pdf" class="button icon solid fa-file">Resume  </href></a>  </li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                </div>
+                <div class="vtimeline-block">
+                    <span class="vtimeline-date">Jun 2021 – Present</span>
+                    <div data-date="June 2021 – Present" class="vtimeline-content shadow-large">
+                        <h3>Crestron</h3>
+                        <h4>Software Engineering Intern</h4>
+                        <p>
+                            <ul>
+                                <li>Writing Python scripts to test various tablet device’s commands in agile sprints</li>
+                                <li>Building a CI pipeline using Jenkins on Docker to improve product reliability</li>
+                                <li>Rotating teams with sales and development to understand client expectations </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                </div>
+                <div class="vtimeline-block">
+                    <span class="vtimeline-date">Sep 2018 – Present</span>
+                    <div data-date="September 2018 – Present" class="vtimeline-content shadow-large">
+                        <h3>Bard College Nano and Micro Labs</h3>
+                        <h4>Undergraduate Researcher</h4>
+                        <p>
+                            <ul>
+                                <li>Fabricated and imaged microstructures using two-photon polymerization and a SEM</li>
+                                <li>Used Structure-From-Motion techniques to convert 2D images to 3D point clouds</li>
+                                <li>
+                                    Compared an ideal point cloud to recreated version to improve precision in fabrication
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                </div>
+                <div class="vtimeline-block">
+                    <span class="vtimeline-date">Oct 2018 – May 2021</span>
+                    <div data-date="February 2017 – Present" class="vtimeline-content shadow-large">
+                        <h3>Innovation Club</h3>
+                        <h4>President and Founder</h4>
+                        <p>
+                            <ul>
+                                <li>Lead and managed groups through projects that innovate campus life</li>
+                                <li>Created a food funnel machine using Arduino and a robotic arm to sort snacks</li>
+                                <li>Planned a mental wellness site that helps those with chronic depression</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vtimeline-point">
+                <div class="vtimeline-icon">
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                </div>
+                <div class="vtimeline-block">
+                    <span class="vtimeline-date">Aug 2018 – May 2021 </span>
+                    <div data-date="August 2016 – December 2016" class="vtimeline-content shadow-large">
+                        <h3>Finance and Investment Club</h3>
+                        <h4>Treasurer </h4>
+                        <p>
+                            <ul>
+                                <li>Managed and allocated club funds for various projects and investments</li>
+                                <li>Won profit margin competition for analyzing stocks</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
 
-			<!-- Banner -->
-				<section id="banner">
-					<div class="container">
-						<p>Reach me at vishrut811@gmail.com</p>
-					</div>
-				</section>
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Columbia University</h3>
+            <span class="education-date">Aug 2021 - May 2023</span>
+            <h4>Candidate for Bachelor of Science in Computer Science </h4>
+        </div>
+        <!-- End .education-block -->
 
-	
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <div class="education-block">
+            <h3>Bard College</h3>
+            <span class="education-date"> Aug 2018 - May 2021</span>
+            <h4>Bachelor of Arts in Mathematics </h4>GPA: 3.88
+            <ul>
+                <li>Dean’s List, Distinguished Scientist Award, and Scholar-Athlete of the Year </li>
+         
+            <li>Relevant Coursework Data Structures, Design of Programming Languages, Computer Systems, 
+                Advanced Computer Vision, Scientific Computing, Econometrics, Physics I - II, 
+                Advance Calculus, Real Analysis, Abstract Algebra, and Partial Differential Equations  
+            </li>
+        </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
 
-	</body>
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <a href="assets/images/JEV.png">
+                                <img class="lazy" src="assets/images/JEV.png" data-src="assets/images/JEV.png" alt="JEV" />
+                            </a>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>JEV</h3>
+                            <p class="mb-1">
+                                The program utilizes C to create a text editor in your terminal. JEV recognizes 
+                                user's keystrokes and can open, save, and close files.
+                            </p>
+                            <p>
+                                <b>Tools: </b>C and Linux
+                            </p>
+                            <a href="https://github.com/VishTiwari/JEV">View Project</a>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                </div>
+                <!-- End .project -->
+
+                <div class="col-lg-6">
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <a href="assets/images/DiviUP.png">
+                                <img class="lazy" src="assets/images/DiviUP.png" data-src="assets/images/DiviUP.png" alt="JEV" />
+                            </a>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>DiviUp</h3>
+                            <p class="mb-1">
+                                Web app that provides a list of top 5 dividend stocks to hold for the long term with 
+                                detailed insights and a divdend calculator
+                            </p>
+                            <p>
+                                <b>Tools: </b> React, JavaScript, CSS, HTML, AJAX
+                            </p>
+                            <a href="https://github.com/VishTiwari/DiviUp">View Project</a>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <a href="assets/images/Tutor.jpeg">
+                                <img class="lazy" src="assets/images/Tutor.jpeg" data-src="assets/images/Tutor.jpeg" alt="Bard College Tutoring Site" />
+                            </a>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Bard College Tutoring Site</h3>
+                            <p class="mb-1">
+                                Bard Math Tutoring site (CRUD) for students to connect with tutors. 
+                                Demo version with login authentification
+                            </p>
+                            <p><b>Tools: </b> Javascript, Node, Mongo, Ejs, Auth0, CSS, HTML</p>
+                            <a href="https://github.com/VishTiwari/BardTutoring">View Project</a>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <a href="assets/images/BeerPong.png">
+                                <img class="lazy" src="assets/images/BeerPong.png" data-src="assets/images/BeerPong.png" alt="Beer Pong" />
+                            </a>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Beer Pong in AR</h3>
+                            <p class="mb-1">
+                               A two player Beer Pong game in Augmented Reality on your web browser!
+                            </p>
+                            <p>
+                                <b>Tools: </b> Javascript and Three.js
+                            </p>
+                            <a href="https://github.com/VishTiwari/AR_BeerPong">View Project</a>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="project shadow-large">
+                        <div class="project-image">
+                            <a href="assets/images/Koterpreter.png">
+                                <img class="lazy" src="assets/images/Koterpreter.png" data-src="assets/images/Koterpreter.png" alt="Koterpreter" />
+                            </a>
+                        </div>
+                        <!-- End .project-image -->
+                        <div class="project-info">
+                            <h3>Koterpreter</h3>
+                            <p class="mb-1">
+                                Scheme interpreter written in Kotlin
+                            </p>
+                            <p>
+                                <b>Tools: </b> Kotlin and Scheme
+                            </p>
+                            <a href="https://github.com/VishTiwari/Koterpreter">View Project</a>
+                        </div>
+                        <!-- End .project-info -->
+                    </div>
+                    <!-- End .project -->
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>Javascript</li>
+            <li>Python</li>
+            <li>Kotlin</li>
+            <li>C</li>
+            <li>React</li>
+            <li>Node</li>
+            <li>MongoDB</li>
+            <li>git</li>
+            <li>Linux</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Agile</li>
+        </ul>
+    </div
+    <!-- End #skills -->
+
+    <div id="contact">
+        <div class="container">
+            <h2 class="text-center">Get in Touch</h2>
+            <div class="row">
+                <div class="col-lg-8 contact-form-wrapper">
+                    <div id="contact-form">
+                        <form method="POST" action="https://formspree.io/f/xoqynanv">
+                            <input type="hidden" name="_subject" value="Contact request from personal website" />
+                            <label for="_replyto">Email</label>
+                            <input type="email" name="_replyto" id="_replyto" aria-label="Your email" required>
+                            <label for="message" class="mt-2">Message</label>
+                            <textarea name="message" id="message" aria-label="Your message" required></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 contact-info">
+                    <div class="py-lg-3 py-1 align-items-center">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <a href="https://goo.gl/maps/qXxsnr2fdYjKA6BVA"
+                            class="ml-2 ml-lg-4"> New York City | NY</a>
+                    </div>
+                    <div class="py-lg-3 py-1 align-items-center">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <a href="mailto: vishrut811@gmail.com class="ml-2 ml-lg-4">vishrut811@gmail.com</a>
+                    </div>
+                    <div class="py-lg-3 py-1 align-items-center">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:845663-6189" class="ml-2 ml-lg-4">(845) 663-6189</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright" id="copyright">
+                    <p> &copy;&nbsp; <span id="CR-year">2021</span>&nbsp;Vishrut Tiwari</p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top" role="button" tabindex="0" title="Scroll up">
+                        <i class="fas fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a name="github-link" href="https://github.com/VishTiwari" title="Github"><i class="fab fa-github"
+                                    aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a name="linkedin-link" href="https://www.linkedin.com/in/vishrut-tiwari/" title="LinkedIn"><i
+                                    class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="build/js/app.js"></script>
+    <script src="build/js/fontawesome.js"></script>
+</body>
+
 </html>

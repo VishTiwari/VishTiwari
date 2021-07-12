@@ -1,0 +1,83 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: 'holland';
+  src: url('../fonts/holland/Holland.woff2') format('woff2'),
+        url('../fonts/holland/Holland.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: Montserrat,Helvetica Neue Light,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.nav-link:after{
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #a7cc2f;
+  transition: width .3s ease-in-out;
+}
+.nav-link:hover:after{
+  width:100%;
+}
+.bg-transparent-black{
+  background: #0000008a;
+}
+.bg-transparent-green{
+  background-color: #a7cc2e85;
+}
+.sale-flag{
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  top: -10px;
+  left: -10px;
+
+}
+.sale-flag span{
+  position: absolute;
+  display: block;
+  width: 225px;
+  background-color:
+  #3498db;
+  color:
+  #fff;
+  text-transform: uppercase;
+  text-align: center;
+  right: -50px;
+  transform: rotate(-45deg);
+  padding: 5px 0;
+  top: 25px;
+  font-size: 14px;
+}
+
+.sale-flag:before{
+  top: 0;
+  right: 0;
+}
+
+.sale-flag:after{
+  bottom: 0;
+  left: 0;
+}
+
+.sale-flag:after, .sale-flag:before{
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+}
+.sale-flag:after, .sale-flag:before{
+  border: 5px solid #1d6fa5;
+}
