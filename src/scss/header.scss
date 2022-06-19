@@ -63,19 +63,19 @@ header li {
 
 header a {
   display: block;
-  color: #3498db;
+  color: #3CB371;
   padding: 10px 15px;
 }
 
 header a:hover {
-  color: #217dbb;
+  color: #3CB371;
   text-decoration: none;
   background: #eee;
   border-radius: 4px;
 }
 
 header a:focus {
-  color: #3498db;
+  color: #3CB371;
   text-decoration: none;
 }
 
@@ -93,7 +93,7 @@ header.active {
   position: fixed;
   right: 15px;
   top: 10px;
-  color: #3498db;
+  color: #3CB371;
   font-size: 1.5em;
   z-index: 10;
   padding: 5px 7px;
@@ -109,7 +109,7 @@ header.active {
   font-size: 1.5em;
   padding: 10px 15px;
   cursor: pointer;
-  color: #3498db;
+  color: #3CB371;
 }
 
 #mobile-menu-close span {
